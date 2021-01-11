@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+
+<body>
+
+
+    <header class="vh-100 position-relative d-flex justify-content-center align-items-start flex-wrap">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-opacity w-100">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" class="w-50"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Recipes</a>
+                    <a class="nav-item nav-link" href="#">ABOUT</a>
+                    <a class="nav-item nav-link" href="#">BLOG</a>
+                    <a class="nav-item nav-link" href="#">CONTACTS</a>
+                </div>
+            </div>
+        </nav>
+        <h1 class="w-100 text-center font-weight-bolder">Never Miss a Recipe!</h1>
+        <div class="getData position-absolute bg-white p-5 w-75 text-center shadow-lg ">
+            <div class="row no-gutters">
+                <div class="col-md-10">
+                    <input class="form-control" placeholder="search recipes" type="text" id="searchInput">
+                </div>
+                <div class="col-md-2">
+                    <button class="btn rounded-mine text-light btn-block font-weight-bolder"
+                        id="searchBtn">Search</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="Categories p-5 d-flex justify-content-center flex-wrap">
+        <div class="recipe text-center text-dark mt-5 p-5 ">
+            <h2 class="font-weight-bolder">Recipe Categories</h2>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                sed tincidunt ut laoreet dolore magna aliquam erat volutpat lorem</p>
+        </div>
+        <div class="container-fluid w-100">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="catogry">
+                        <h3>Meal Type</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="catogry">
+                        <h3>Diet & Health</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="catogry">
+                        <h3>Ingredient</h3>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="catogry">
+                        <h3>Dish Type</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="food">
+            <div class="row">
+                <div class="col-md-8 text-dark py-5">
+
+                    <div class="row" id="recipesRow">
+                        <!-- from javascript -->
+                    </div>
+
+                </div>
+
+                <div class="col-md-4 text-dark" id="recipesDetailsRow">
+                    <!-- from javascript -->
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

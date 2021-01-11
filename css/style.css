@@ -1,0 +1,62 @@
+body{
+    font-family: 'segoe ui light';
+    color: white;
+    /* height: 2500px; */
+}
+header{
+    background-image: url(../images/mainBg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.bg-opacity{
+    background-color: rgba(0,0, 0, 0.5);
+}
+.getData{
+    top: 85%;
+    border-radius: 5px;
+}
+header .btn{
+    background-color: #365207;
+    transition: all 1s;
+}
+header .btn:hover{
+    transform: scale(0.92,0.92);
+    background-color: #2d4407;
+}
+header .rounded-mine{
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+}
+.Categories{
+    background: #faf3f1 url(../images/1.png); ;
+}
+.Categories .recipe{
+    width: 62%;
+}
+@media screen and (max-width:928px) and (min-width:582px){
+    .Categories .recipe{
+        width: 95%;
+    }
+}
+@media screen and (max-width:581px) and (min-width:0px){
+    .Categories .recipe{
+        width: 100%;
+    }
+}
+.catogry{
+    background-image: url(../images/category-bg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: black;
+    text-align: center;
+}
+
+.food h5{
+    font-size: 23px;
+    font-weight: 600;
+    color: #4c7408 ;
+}
+.details{
+    cursor: pointer;
+}
