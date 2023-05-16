@@ -4,7 +4,7 @@ let allRecipes = [];
 allRecipesDetails = {};
 
 
-//  ده جزء اللى لما اسيرش عن نوع معين من الاكل يظهرلى تحت كل الوصفات اللى تخصه 
+//  when I search for a certain type of food, it appears under all the recipes that belong to it
 async function getRecipes(term) {
     let apiRecipes = await fetch(`https://forkify-api.herokuapp.com/api/search?&q=${term}`)
     allRecipes = await apiRecipes.json();
@@ -28,13 +28,13 @@ function displayResipes() {
     document.getElementById("recipesRow").innerHTML = cartoona;
 }
 
-// ده عشان لما اتك على زرار السيرش يستجيب ويجبلى الوجبات 
+// when I press the search button, it responds and brings meals
 searchBtn.addEventListener("click", function () {
     getRecipes(searchInput.value);
 })
 
 
-// ده جزء اللى لما اتك على اى صورة او وصفة يقولى مكوناتها فى جنب 
+// when I click on any picture or recipe, it tells me its ingredients next to it
 async function getDetailsRecipes(id) {
     let detailsApi = await fetch(`https://forkify-api.herokuapp.com/api/get?rId=${id}`)
     allRecipesDetails = await detailsApi.json();
